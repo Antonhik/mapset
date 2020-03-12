@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+let mapA = new Map();
+
+mapA.set("GW","Warhammer");
+mapA.set("Hobbu World","Berserk");
+mapA.set("Magik","dls magik");
+mapA.set("Hous","Doc");
+
+let mapB = new Map();
+
+mapB.set("GW",3500);
+mapB.set("Hobbu World",1000);
+mapB.set("Magik",900);
+mapB.set("Hous",2300);
+
+let mapC = new Map();
+
+mapC.set("GW",3);
+mapC.set("Hobbu World",4);
+mapC.set("Magik",2);
+mapC.set("Hous",1);
+
+let lowPrice = function() {
+    let a = mapB.get("GW")
+    let b = mapB.get("Hobbu World")
+    let c = mapB.get("Magik")
+    let d = mapB.get("Hous")
+
+    if(a == Math.min(a, b, c, d)) {
+        console.log(`GW / ${mapA.get("GW")} / ${mapB.get("GW")} / ${mapC.get("GW")}day`)
+    }else if(b == Math.min(b, a, c, d)) {
+        console.log(`Hobbu World / ${mapA.get("Hobbu World")} / ${mapB.get("Hobbu World")} / ${mapC.get("Hobbu World")}day`)
+    }else if(c == Math.min(a, b, c, d)) {
+        console.log(`Magik / ${mapA.get("Magik")} / ${mapB.get("Magik")} / ${mapC.get("Magik")}day`)
+    }else if(d == Math.min(a, b, c, d)) {
+        console.log(`Hous / ${mapA.get("Hous")} / ${mapB.get("Hous")} / ${mapC.get("Hous")}day`)
+    }
+
+}
+
+let lowTime = function() {
+    let a = mapC.get("GW")
+    let b = mapC.get("Hobbu World")
+    let c = mapC.get("Magik")
+    let d = mapC.get("Hous")
+
+    if(a == Math.min(a, b, c, d)) {
+        console.log(`GW / ${mapA.get("GW")} / ${mapB.get("GW")} / ${mapC.get("GW")}day`)
+    }else if(b == Math.min(b, a, c, d)) {
+        console.log(`Hobbu World / ${mapA.get("Hobbu World")} / ${mapB.get("Hobbu World")} / ${mapC.get("Hobbu World")}day`)
+    }else if(c == Math.min(a, b, c, d)) {
+        console.log(`Magik / ${mapA.get("Magik")} / ${mapB.get("Magik")} / ${mapC.get("Magik")}day`)
+    }else if(d == Math.min(a, b, c, d)) {
+        console.log(`Hous / ${mapA.get("Hous")} / ${mapB.get("Hous")} / ${mapC.get("Hous")}day`)
+    }
+
+}
+
+let maxPrice = function() {
+    let a = mapB.get("GW")
+    let b = mapB.get("Hobbu World")
+    let c = mapB.get("Magik")
+    let d = mapB.get("Hous")
+
+    if(a == Math.max(a, b, c, d)) {
+        console.log(`GW / ${mapA.get("GW")} / ${mapB.get("GW")} / ${mapC.get("GW")}day`)
+    }else if(b == Math.max(b, a, c, d)) {
+        console.log(`Hobbu World / ${mapA.get("Hobbu World")} / ${mapB.get("Hobbu World")} / ${mapC.get("Hobbu World")}day`)
+    }else if(c == Math.max(a, b, c, d)) {
+        console.log(`Magik / ${mapA.get("Magik")} / ${mapB.get("Magik")} / ${mapC.get("Magik")}day`)
+    }else if(d == Math.max(a, b, c, d)) {
+        console.log(`Hous / ${mapA.get("Hous")} / ${mapB.get("Hous")} / ${mapC.get("Hous")}day`)
+    }
+
+}
+
+let maxTime = function() {
+    let a = mapC.get("GW")
+    let b = mapC.get("Hobbu World")
+    let c = mapC.get("Magik")
+    let d = mapC.get("Hous")
+
+    if(a == Math.max(a, b, c, d)) {
+        console.log(`GW / ${mapA.get("GW")} / ${mapB.get("GW")} / ${mapC.get("GW")}day`)
+    }else if(b == Math.max(b, a, c, d)) {
+        console.log(`Hobbu World / ${mapA.get("Hobbu World")} / ${mapB.get("Hobbu World")} / ${mapC.get("Hobbu World")}day`)
+    }else if(c == Math.max(a, b, c, d)) {
+        console.log(`Magik / ${mapA.get("Magik")} / ${mapB.get("Magik")} / ${mapC.get("Magik")}day`)
+    }else if(d == Math.max(a, b, c, d)) {
+        console.log(`Hous / ${mapA.get("Hous")} / ${mapB.get("Hous")} / ${mapC.get("Hous")}day`)
+    }
+
+}
+
+lowPrice();
+
+lowTime();
+
+maxPrice();
+
+maxTime();
+
+
+</script>
+</html>
